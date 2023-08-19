@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>想登录？先过我这关！</title>
+    <title>Document</title>
     <link rel="stylesheet" href="登录.css">
 </head>
 <body>
     <div class="login">
         <h1>Login</h1>
-        <form action="./1.html"> 
+        <form action="./首页.html"> 
             <!-- <label for="username">用户名</label> -->
             <input type="text" id="uname" value="" placeholder="用户名"/><br>
             <input type="password" id="pwd" value="" placeholder="密码"/><br>
@@ -26,7 +27,7 @@
         // 查找元素
     } 
     function checkuser() { 
-        if(getValue('uname') == "youboxian" && getValue('pwd') == "1118") { 
+        if(getValue('uname') == "ybx" && getValue('pwd') == "1118") { 
             return true; 
         }else { 
             alert("登录名或密码错误！")
