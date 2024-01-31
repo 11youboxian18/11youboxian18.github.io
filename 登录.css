@@ -1,4 +1,12 @@
 
+
+
+
+改写一下，所有文字居中，其他不变
+
+
+以下是改写后的 CSS 代码，使所有文字居中，其他样式不变：
+
 body {
     background:url("../xc4.jpg") no-repeat center center fixed;
     background-size:100% 100%;
@@ -20,6 +28,7 @@ body{
     margin: -150px 0 0 -150px;   
     width: 300px;   
     height: 300px;   
+    text-align: center; /* 添加此行使文本居中 */
 }
 .login h1{   
     color: rgb(12, 7, 7);   
@@ -44,6 +53,8 @@ body{
     border-bottom: 1px solid #56536A;   
     border-radius: 4px;   
     background-color: #2D2D3F;   
+    display: inline-block; /* 添加此行使文本居中 */
+    vertical-align: middle; /* 添加此行使文本居中 */
 }   
 #but{   
     width: 300px;   
@@ -57,5 +68,7 @@ body{
     font-size: 15px;   
     line-height: normal;   
     border-radius: 5px;   
-    margin: 0;   
+    margin: 0;  
+    display: inline-block; /* 添加此行使文本居中 */
+    vertical-align: middle; /* 添加此行使文本居中 */
 }
