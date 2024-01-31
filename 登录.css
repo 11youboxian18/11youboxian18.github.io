@@ -1,12 +1,3 @@
-
-
-
-
-改写一下，所有文字居中，其他不变
-
-
-以下是改写后的 CSS 代码，使所有文字居中，其他样式不变：
-
 body {
     background:url("../xc4.jpg") no-repeat center center fixed;
     background-size:100% 100%;
