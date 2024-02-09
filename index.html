@@ -10,12 +10,12 @@
 </head>
 <body>
     <div class="login">
-        <h1>不想登录请访问https://11youboxian18.github.io/1234.html</h1>
+        <h1>人机请访问https://11youboxian18.github.io/1234.html</h1>
         <form action="./Default.html"> 
             <!-- <label for="username">用户名</label> -->
-            <input type="text" id="uname" value="" placeholder="用户名"/><br>
-            <input type="password" id="pwd" value="" placeholder="密码"/><br>
-            <input type="submit" id="but" value="登录" onclick="return checkuser()"/> 
+            <input type="text" id="uname" value="" placeholder="请输入游博显授权的管理员"/><br>
+            <input type="password" id="pwd" value="" placeholder="请输入已授权"/><br>
+            <input type="submit" id="but" value="人机验证" onclick="return checkuser()"/> 
             <!-- 返回了true就会打开页面  -->
         </form> 
     </div>
@@ -27,10 +27,10 @@
         // 查找元素
     } 
     function checkuser() { 
-        if(getValue('uname') == "ybx" && getValue('pwd') == "1118") { 
+        if(getValue('uname') == "游博显授权的管理员" && getValue('pwd') == "已授权") { 
             return true; 
         }else { 
-            alert("不要猜密码！")
+            alert("你人机！")
             // 警告框
             return false; 
         } 
