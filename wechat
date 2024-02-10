@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信好友添加</title>
+    <script>
+        // 复制手机号码到剪贴板
+        function copyNumber() {
+            navigator.clipboard.writeText('13317055617');
+        }
+
+        // 跳转至微信加好友页面
+        function gotoWeChat() {
+            window.location.href = 'weixin://';
+        }
+
+        // 确认是否已复制
+        copyNumber();
+        setTimeout(function() {
+            if (navigator.clipboard.readText() === '13317055617') {
+                alert('已复制成功，请打开微信客户端-加号-加好友-粘贴即可');
+                gotoWeChat();
+            }
+        }, 1000);
+    </script>
+</head>
+<body>
+    <h1>微信好友添加</h1>
+    <p>请打开微信客户端-加号-加好友-粘贴即可</p>
+</body>
+</html>
