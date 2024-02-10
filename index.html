@@ -10,11 +10,11 @@
 </head>
 <body>
     <div class="login">
-        <h1>人机请访问https://11youboxian18.github.io/1234.html</h1>
+        <h1>按照框里说的做</h1>
         <form action="./Default.html"> 
             <!-- <label for="username">用户名</label> -->
-            <input type="text" id="uname" value="" placeholder="请输入游博显授权的管理员"/><br>
-            <input type="password" id="pwd" value="" placeholder="请输入已授权"/><br>
+            <input type="text" id="uname" value="" placeholder="请输入1122"/><br>
+            <input type="password" id="pwd" value="" placeholder="请输入3344"/><br>
             <input type="submit" id="but" value="人机验证" onclick="return checkuser()"/> 
             <!-- 返回了true就会打开页面  -->
         </form> 
@@ -27,7 +27,7 @@
         // 查找元素
     } 
     function checkuser() { 
-        if(getValue('uname') == "游博显授权的管理员" && getValue('pwd') == "已授权") { 
+        if(getValue('uname') == "1122" && getValue('pwd') == "3344") { 
             return true; 
         }else { 
             alert("你人机！")
@@ -35,5 +35,12 @@
             return false; 
         } 
     } 
+script language="javascript">
+        function Click(){
+            alert('版权所有，请尊重！');
+            window.event.returnValue=false;
+        }
+        document.oncontextmenu=Click;
+    </script>   
 </script> 
 </html>
