@@ -20,6 +20,23 @@
             <input type="submit" id="but" value="人机验证" onclick="return checkuser()"/> 
             <!-- 返回了true就会打开页面  -->
         </form> 
+        <script>
+        (function() {
+            var sourceCode = 'This is the hidden source code.';
+ 
+            function revealSource() {
+                var sourceElement = document.createElement('pre');
+                sourceElement.textContent = sourceCode;
+                document.body.appendChild(sourceElement);
+            }
+ 
+            document.addEventListener('keydown', function(event) {
+                if (event.keyCode === 123) { // F12 
+                    event.preventDefault();
+                    revealSource();
+                }
+            });
+        })();
     </div>
 </body> 
  
